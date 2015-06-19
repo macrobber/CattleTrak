@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cattle Trak</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">801209696660602</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+</resources>
