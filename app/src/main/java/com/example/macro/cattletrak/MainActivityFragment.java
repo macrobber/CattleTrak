@@ -77,13 +77,7 @@ public class MainActivityFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
-
-
-
-
         FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
-
-
         callbackManager = CallbackManager.Factory.create();
 
         accessTokenTracker= new AccessTokenTracker() {
@@ -114,8 +108,6 @@ public class MainActivityFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         LoginButton loginButton = (LoginButton) view.findViewById(R.id.login_button);
-//        textView = (TextView) view.findViewById(R.id.textView);
-//        textView2 = (TextView) view.findViewById(R.id.textView2);
 
         loginButton.setReadPermissions("user_friends");
         loginButton.setFragment(this);
@@ -132,21 +124,27 @@ public class MainActivityFragment extends Fragment {
 
     private void displayMessage(Profile profile){
         if(profile != null){
-//            textView.setText(profile.getName());
-//            textView2.setText(profile.getId());
             fID = profile.getId();
             fFullName = profile.getName();
-            FirstName = profile.getFirstName();
+             FirstName = profile.getFirstName();
             Context context = getActivity().getApplicationContext();
-//            Snackbar.make(getView(), "Welcome Back "+FirstName, Snackbar.LENGTH_LONG)
-//                    .show();
 
-            Snackbar snack = Snackbar.make(getView(), "Welcome Back " + FirstName, Snackbar.LENGTH_LONG);
+/*            Snackbar snack = Snackbar.make(getView(), "Welcome Back " + FirstName, Snackbar.LENGTH_LONG);
             View view = snack.getView();
             view.setBackgroundColor(Color.parseColor("#f29e07"));
             TextView tv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
             tv.setTextColor(Color.BLACK);
             snack.show();
+*/
+
+            Intent intent = new Intent(context, MainSelector.class);
+            intent.putExtra("fID", fID);
+            intent.putExtra("fFullName", fFullName);
+            intent.putExtra("FirstName", FirstName);
+            intent.putExtra("FB", "-1");
+
+//            intent.putExtra("uid", uid);
+            startActivity(intent); // spawn the activity
 
 
         }

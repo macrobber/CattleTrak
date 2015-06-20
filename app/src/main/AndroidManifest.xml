@@ -16,8 +16,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -26,14 +25,18 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".SplashActivity"
+            android:label="Cattle Trak"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:label="Cattle Trak" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainSelector"
+            android:label="@string/title_activity_main_selector" >
         </activity>
     </application>
 
