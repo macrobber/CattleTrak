@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +78,8 @@ public class MainActivityFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
+//        FacebookSdk.sdkInitialize(getApplicationContext());
+
         FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
 
@@ -107,6 +110,7 @@ public class MainActivityFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+//        super.onCreateView(view, savedInstanceState);
         LoginButton loginButton = (LoginButton) view.findViewById(R.id.login_button);
 
         loginButton.setReadPermissions("user_friends");
@@ -128,6 +132,7 @@ public class MainActivityFragment extends Fragment {
             fFullName = profile.getName();
              FirstName = profile.getFirstName();
             Context context = getActivity().getApplicationContext();
+//            Context context = getApplicationContext();
 
 /*            Snackbar snack = Snackbar.make(getView(), "Welcome Back " + FirstName, Snackbar.LENGTH_LONG);
             View view = snack.getView();

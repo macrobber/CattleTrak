@@ -38,6 +38,8 @@
             android:name=".MainSelector"
             android:label="@string/title_activity_main_selector" >
         </activity>
+        <activity android:name=".CheeseDetailActivity" />
+
     </application>
 
 </manifest>
