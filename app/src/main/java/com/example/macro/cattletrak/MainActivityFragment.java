@@ -134,13 +134,13 @@ public class MainActivityFragment extends Fragment {
             Context context = getActivity().getApplicationContext();
 //            Context context = getApplicationContext();
 
-/*            Snackbar snack = Snackbar.make(getView(), "Welcome Back " + FirstName, Snackbar.LENGTH_LONG);
+            Snackbar snack = Snackbar.make(getView(), "Welcome Back " + FirstName, Snackbar.LENGTH_LONG);
             View view = snack.getView();
             view.setBackgroundColor(Color.parseColor("#f29e07"));
             TextView tv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
             tv.setTextColor(Color.BLACK);
             snack.show();
-*/
+
 
             Intent intent = new Intent(context, MainSelector.class);
             intent.putExtra("fID", fID);
