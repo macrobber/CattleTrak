@@ -6,68 +6,48 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
+public class sign_up extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sign_up);
 
-//        getSupportActionBar().hide();  // works
-        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        Button btnReg = (Button) findViewById(R.id.btnRegister);
 
-        setContentView(R.layout.activity_main);
-
-        Button btnLog = (Button) findViewById(R.id.btnLogin);
-
-        btnLog.setOnClickListener(new View.OnClickListener() {
+        btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                Toast.makeText(getApplicationContext(), "Yup...you clicked it.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainSelector.class);
-                EditText editMail = (EditText) findViewById(R.id.editEmail);
+                EditText editMail = (EditText) findViewById(R.id.Email);
                 EditText editPW = (EditText) findViewById(R.id.editPassword);
+                EditText editReEnterPW = (EditText) findViewById(R.id.ReenterPassword);
+
                 String sEmail = editMail.getText().toString();
                 String sPW = editPW.getText().toString();
-
+                String sPW2 = editReEnterPW.getText().toString();
                 sEmail = sEmail.trim();
 
                 intent.putExtra("Email", sEmail);
                 intent.putExtra("PW", sPW);
-                intent.putExtra("FB", "1");
+                intent.putExtra("PW2", sPW2);
+                intent.putExtra("FB", "-2"); // here -2 will be a new user manual creation
 
                 startActivity(intent);
 
             }
         });
 
-        Button btnSign = (Button) findViewById(R.id.btnSignUp);
-
-        btnSign.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(), sign_up.class);
-                startActivity(intent2);
-
-            }
-        });
-
-
-
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_up, menu);
         return true;
     }
 

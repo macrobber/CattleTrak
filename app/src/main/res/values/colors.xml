@@ -5,6 +5,7 @@
     <color name="lightBrown">#666633</color>
     <color name="darkBrown">#525229</color>
     <color name="orangeFont">#f29e07</color>
+    <color name="tabsScrollColor">#8a140e</color>
 
 
 </resources>
