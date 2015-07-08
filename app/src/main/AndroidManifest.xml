@@ -38,7 +38,10 @@
             android:name=".MainSelector"
             android:label="@string/title_activity_main_selector" >
         </activity>
-
+        <activity
+            android:name=".sign_up"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
     </application>
 
 </manifest>
