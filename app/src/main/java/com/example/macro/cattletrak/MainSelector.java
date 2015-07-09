@@ -1,9 +1,7 @@
 package com.example.macro.cattletrak;
 
-import android.content.Context;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,8 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.facebook.login.LoginManager;
 import android.support.v4.view.ViewPager;
@@ -25,6 +23,12 @@ import android.support.v7.widget.RecyclerView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Tabs.SlidingTabLayout;
+import Tabs.ViewPagerAdapter;
 
 public class MainSelector extends ActionBarActivity { /* When using Appcombat support library
                                                          you need to extend Main Activity to
@@ -79,9 +83,9 @@ public class MainSelector extends ActionBarActivity { /* When using Appcombat su
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_selector);
 
-
         // Creating The Toolbar and setting it as the Toolbar for the activity
 
+/*
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
@@ -145,6 +149,8 @@ public class MainSelector extends ActionBarActivity { /* When using Appcombat su
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();
 
+        */
+
         Bundle extras = getIntent().getExtras();
         if (extras == null) {
             return;
@@ -190,6 +196,7 @@ public class MainSelector extends ActionBarActivity { /* When using Appcombat su
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -248,8 +255,17 @@ public class MainSelector extends ActionBarActivity { /* When using Appcombat su
                 progressBarHolder.setAnimation(outAnimation);
                 progressBarHolder.setVisibility(View.GONE);
 
-                Toast.makeText(getApplicationContext(), "UID Returned" + uid, Toast.LENGTH_LONG).show();
 
+                ImageView imgCattle = (ImageView) findViewById(R.id.imageView4);
+                imgCattle.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), CattleManagement.class);
+                        intent.putExtra("uid", uid);
+                        startActivity(intent); // spawn the activity
+                    } // closes OnClick public void
+                }  // closes setonclick listener
+                );  // closes setonclick listener
 
             } catch (Exception e) {
                 e.printStackTrace();

@@ -1,4 +1,4 @@
-package com.example.macro.cattletrak;
+package Tabs;
 
 /**
  * Created by macro on 6/29/2015.

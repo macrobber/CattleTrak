@@ -1,4 +1,4 @@
-package com.example.macro.cattletrak;
+package Tabs;
 
 /*
  * Copyright 2014 Google Inc. All rights reserved.
@@ -19,7 +19,6 @@ package com.example.macro.cattletrak;
 
         import android.content.Context;
         import android.graphics.Typeface;
-        import android.os.Build;
         import android.support.v4.view.PagerAdapter;
         import android.support.v4.view.ViewPager;
         import android.util.AttributeSet;

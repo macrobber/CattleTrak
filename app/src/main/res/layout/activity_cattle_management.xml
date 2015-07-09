@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#666633"
+        android:shrinkColumns="*" android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            >
+
+    <ImageView
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:id="@+id/imageView1"
+        android:src="@drawable/livestock_logo1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_gravity="left"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newCow"
+        android:textSize="22dp"
+        android:id="@+id/AddCattle"
+        android:singleLine="false"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        />
+</TableRow>
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="center_horizontal"
+android:background="#525229"
+    >
+
+<ImageView
+    android:layout_width="70dip"
+    android:layout_height="70dip"
+    android:id="@+id/imageView1"
+    android:src="@drawable/livestock_logo1"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_gravity="left"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/viewAllCattle"
+    android:textSize="22dp"
+    android:id="@+id/testView2"
+    android:singleLine="false"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    />
+</TableRow>
+
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="center_horizontal"
+android:background="#666633"
+    >
+
+<ImageView
+    android:layout_width="70dip"
+    android:layout_height="70dip"
+    android:id="@+id/imageView1"
+    android:src="@drawable/livestock_logo1"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_gravity="left"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/editCow"
+    android:textSize="22dp"
+    android:id="@+id/tEditCow"
+    android:singleLine="false"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    />
+</TableRow>
+
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="center_horizontal"
+android:background="#525229"
+    >
+
+<ImageView
+    android:layout_width="70dip"
+    android:layout_height="70dip"
+    android:id="@+id/imageView1"
+    android:src="@drawable/livestock_logo1"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_gravity="left"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/deleteCow"
+    android:textSize="22dp"
+    android:id="@+id/tDeleteCow"
+    android:singleLine="false"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    />
+</TableRow>
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="center_horizontal"
+android:background="#666633"
+    >
+
+<ImageView
+    android:layout_width="70dip"
+    android:layout_height="70dip"
+    android:id="@+id/imageView1"
+    android:src="@drawable/livestock_logo1"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_gravity="left"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/searchCow"
+    android:textSize="22dp"
+    android:id="@+id/searchCattle"
+    android:singleLine="false"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    />
+</TableRow>
+<TableRow
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="center_horizontal"
+android:background="#525229"
+    >
+
+<ImageView
+    android:layout_width="70dip"
+    android:layout_height="70dip"
+    android:id="@+id/imageView1"
+    android:src="@drawable/livestock_logo1"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_gravity="left"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/heardHealth"
+    android:textSize="22dp"
+    android:id="@+id/herdHealth"
+    android:singleLine="false"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    />
+</TableRow>
+
+    </TableLayout>
+
+</ScrollView>

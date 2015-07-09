@@ -18,6 +18,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -42,6 +43,50 @@
             android:name=".sign_up"
             android:label="@string/title_activity_sign_up" >
         </activity>
+        <activity
+            android:name=".CattleManagement"
+            android:label="@string/title_activity_cattle_management" >
+        </activity>
+        <activity
+            android:name=".ShowAllCattle"
+            android:label="@string/title_activity_show_all_cattle" >
+        </activity>
+        <activity
+            android:name=".CowDetailActivity"
+            android:label="Cattle Details" >
+        </activity>
+        <activity
+            android:name=".SearchCattle"
+            android:label="@string/title_activity_search_cattle" >
+        </activity>
+        <activity
+            android:name=".CattleAdd"
+            android:label="@string/title_activity_cattle_add"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".DeactivateCattle"
+            android:label="@string/title_activity_deactivate_cattle" >
+        </activity>
+        <activity
+            android:name=".CattleUpdate"
+            android:label="@string/title_activity_cattle_update" >
+        </activity>
+        <activity
+            android:name=".CattleUpdateDetails"
+            android:label="@string/title_activity_cattle_update_details"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".herdHealthSelector"
+            android:label="@string/title_activity_herd_health_selector" >
+        </activity>
+        <activity
+            android:name=".AddHealth"
+            android:label="@string/title_activity_add_health" >
+        </activity>
+
+
     </application>
 
 </manifest>

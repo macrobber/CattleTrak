@@ -4,7 +4,6 @@
     <string name="action_settings">Settings</string>
     <string name="app_id">801209696660602</string>
     <string name="title_activity_splash">SplashActivity</string>
-    <string name="sign_in">Sign In</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="rehint_password">Re-Enter your password</string>
@@ -12,6 +11,39 @@
     <string name="title_activity_main_selector">Cattle Trak</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email: </string>
+    <string name="password">Password:</string>
+    <string name="facebook_app_id">827866823967613</string>
+    <string name="cattlePage"><u>Cattle Management</u></string>
+    <string name="newCow">Add New Cattle</string>
+    <string name="viewAllCattle">View All Cattle</string>
+    <string name="editCow">Edit Cattle</string>
+    <string name="deleteCow">Deactivate Cattle</string>
+    <string name="searchCow">Search Cattle</string>
+    <string name="ClickToView">Click to view more detail</string>
+    <string name="searchCattle">Enter a Tag to Search:</string>
+    <string name="updateCattle">Enter a Tag to update:</string>
+
+    <string name="deactivateText">Enter a Tag to Deactivate</string>
+    <string name="addCattle">Add Cattle</string>
+    <string name="updateCattleBnt">Update Cattle</string>
+    <string name="RequiredField">Only Tag is Required.</string>
+    <string name="date">Date</string>
+    <string name="heardHealth">Herd Health</string>
+    <string name="newHealth">Add Health Record</string>
+    <string name="viewHealth">View Health Records</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_cattle_management">Cattle Management</string>
+    <string name="title_activity_show_all_cattle">Show All Cattle</string>
+    <string name="title_activity_search_cattle">Search Cattle</string>
+    <string name="title_activity_cattle_add">Add Cattle</string>
+    <string name="title_activity_deactivate_cattle">Deactivate Cattle</string>
+    <string name="title_activity_cattle_update">Cattle Update</string>
+    <string name="title_activity_cattle_update_details">Cattle Update Details</string>
+    <string name="title_activity_herd_health_selector">Herd Health Selector</string>
+    <string name="title_activity_add_health">Add Health Record</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

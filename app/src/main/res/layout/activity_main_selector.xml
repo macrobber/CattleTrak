@@ -1,41 +1,9 @@
-<android.support.v4.widget.DrawerLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/DrawerLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:elevation="7dp">
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainSelector">
-
-    <include
-        android:id="@+id/tool_bar"
-        layout="@layout/tool_bar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        />
-
-    <com.example.macro.cattletrak.SlidingTabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="2dp"
-        android:background="@color/darkGreen"/>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        />
-</LinearLayout>
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:fillViewport="false"
+    >
     <FrameLayout
         android:id="@+id/progressBarHolder"
         android:animateLayoutChanges="true"
@@ -53,14 +21,136 @@
             android:layout_gravity="center" />
     </FrameLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="320dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="left"
+        android:shrinkColumns="*" android:stretchColumns="*"
+        >
+        <!--
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="cr_horizontal"
+                    >
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temp1:"
+                        android:id="@+id/testView1"
+                        android:singleLine="false"
+                        android:layout_alignBottom="@+id/testView2"
+                        android:layout_toLeftOf="@+id/testView2"
+                        android:layout_toStartOf="@+id/testView2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temp2:"
+                        android:id="@+id/testView2"
+                        android:singleLine="false"
+                        android:paddingTop="45dp"
+                        android:layout_marginLeft="111dp"
+                        android:layout_marginStart="111dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:layout_toEndOf="@+id/textView5" />
+                </TableRow>
+        -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            >
 
-        android:background="#666633"
-        android:scrollbars="vertical">
 
-    </android.support.v7.widget.RecyclerView>
-</android.support.v4.widget.DrawerLayout>
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView1"
+                android:src="@drawable/account_logo1"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView2"
+                android:src="@drawable/farm_icon1"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView3"
+                android:src="@drawable/equiptment_icon1"
+                android:layout_marginTop="10dp"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView4"
+                android:src="@drawable/livestock_logo1"
+                android:layout_marginTop="52dp"
+                />
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView"
+                android:src="@drawable/farmtrack_logo_goat"
+                android:layout_marginTop="52dp"
+                />
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView"
+                android:src="@drawable/farmtrack_logohorse1"
+                android:layout_marginTop="52dp"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView"
+                android:src="@drawable/farmtrack_chicken1"
+                android:layout_marginTop="52dp"
+                />
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView"
+                android:src="@drawable/other_logo1"
+                android:layout_marginTop="52dp"
+                />
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageView"
+                android:src="@drawable/crops_icon1"
+                android:layout_marginTop="52dp"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</RelativeLayout>
